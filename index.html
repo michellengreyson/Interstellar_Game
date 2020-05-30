@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" async></script>
+    <title>Mix-Or-Match</title>
+  </head>
+  <body>
+    <h1 class="page-title">Mix-Or-Match</h1>
+    <div class="overlay-text visible">Click to Start</div>
+    <div id="game-over-text" class="overlay-text">
+      GAME OVER <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+      VICTORY <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div class="game-container">
+      <div class="game-info-container">
+        <div class="game-info">Time <span id="time-remaining">100</span></div>
+        <div class="game-info">Flips <span id="flips">0</span></div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/fireflake.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/fireflake.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/laserburst.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/laserburst.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/lotus.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/lotus.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/solar.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/solar.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/starcycle.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/starcycle.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/starswirl.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/starswirl.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/sun.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/sun.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/sunrays.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-back card-face"></div>
+        <div class="card-front card-face">
+          <img
+            class="starburst starburst-top-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-top-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-left"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img
+            class="starburst starburst-bottom-right"
+            src="Assets/Images/sun-rad-sm.png"
+          />
+          <img class="card-value" src="Assets/Images/sunrays.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
