@@ -18,15 +18,11 @@ html {
   min-height: 100vh;
   cursor: url("Assets/Cursors/star.ani"), auto;
   font-family: "Atures";
-  background: url("Assets/Images/starrynight-bg.jpg") no-repeat center center
-    fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 body {
+  background: url("Assets/Images/starrynight-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
 }
 
@@ -209,7 +205,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .game-container {
     grid-template-columns: repeat(2, auto);
   }
@@ -219,19 +215,22 @@ body {
     align-items: center;
   }
   .overlay-text {
-    font-size: small;
+    font-size: 30px;
     align-items: center;
   }
 }
+@media screen and (min-width: 601px) {
+ 
+}
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
 
 }
 
